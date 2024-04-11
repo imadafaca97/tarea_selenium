@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-04-10 20:45:34</p>
+                <p class='attribute'><strong>Duration: </strong>42.98 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 2, Error: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.WikipediaTests</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_See_Title</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_access_article_page</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".mw-search-result-heading"}
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0A27072+63090]
+	(No symbol) [0x00007FF6B0992CC2]
+	(No symbol) [0x00007FF6B082EC65]
+	(No symbol) [0x00007FF6B087499D]
+	(No symbol) [0x00007FF6B0874ADC]
+	(No symbol) [0x00007FF6B08B5B37]
+	(No symbol) [0x00007FF6B089701F]
+	(No symbol) [0x00007FF6B08B3412]
+	(No symbol) [0x00007FF6B0896D83]
+	(No symbol) [0x00007FF6B08683A8]
+	(No symbol) [0x00007FF6B0869441]
+	GetHandleVerifier [0x00007FF6B0E225CD+4238285]
+	GetHandleVerifier [0x00007FF6B0E5F72D+4488493]
+	GetHandleVerifier [0x00007FF6B0E57A0F+4456463]
+	GetHandleVerifier [0x00007FF6B0B005B6+953270]
+	(No symbol) [0x00007FF6B099E58F]
+	(No symbol) [0x00007FF6B0999264]
+	(No symbol) [0x00007FF6B099939B]
+	(No symbol) [0x00007FF6B0989BD4]
+	BaseThreadInitThunk [0x00007FFE0C7F7344+20]
+	RtlUserThreadStart [0x00007FFE0E6426B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Sebas\Desktop\Itla\Quinto cuatrimestre\Programacion III\tarea\tarea.py", line 48, in test_access_article_page
+    article_link = self.driver.find_element(By.CLASS_NAME,"mw-search-result-heading")
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".mw-search-result-heading"}
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0A27072+63090]
+	(No symbol) [0x00007FF6B0992CC2]
+	(No symbol) [0x00007FF6B082EC65]
+	(No symbol) [0x00007FF6B087499D]
+	(No symbol) [0x00007FF6B0874ADC]
+	(No symbol) [0x00007FF6B08B5B37]
+	(No symbol) [0x00007FF6B089701F]
+	(No symbol) [0x00007FF6B08B3412]
+	(No symbol) [0x00007FF6B0896D83]
+	(No symbol) [0x00007FF6B08683A8]
+	(No symbol) [0x00007FF6B0869441]
+	GetHandleVerifier [0x00007FF6B0E225CD+4238285]
+	GetHandleVerifier [0x00007FF6B0E5F72D+4488493]
+	GetHandleVerifier [0x00007FF6B0E57A0F+4456463]
+	GetHandleVerifier [0x00007FF6B0B005B6+953270]
+	(No symbol) [0x00007FF6B099E58F]
+	(No symbol) [0x00007FF6B0999264]
+	(No symbol) [0x00007FF6B099939B]
+	(No symbol) [0x00007FF6B0989BD4]
+	BaseThreadInitThunk [0x00007FFE0C7F7344+20]
+	RtlUserThreadStart [0x00007FFE0E6426B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_change_interface_language</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".lang1"}
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0A27072+63090]
+	(No symbol) [0x00007FF6B0992CC2]
+	(No symbol) [0x00007FF6B082EC65]
+	(No symbol) [0x00007FF6B087499D]
+	(No symbol) [0x00007FF6B0874ADC]
+	(No symbol) [0x00007FF6B08B5B37]
+	(No symbol) [0x00007FF6B089701F]
+	(No symbol) [0x00007FF6B08B3412]
+	(No symbol) [0x00007FF6B0896D83]
+	(No symbol) [0x00007FF6B08683A8]
+	(No symbol) [0x00007FF6B0869441]
+	GetHandleVerifier [0x00007FF6B0E225CD+4238285]
+	GetHandleVerifier [0x00007FF6B0E5F72D+4488493]
+	GetHandleVerifier [0x00007FF6B0E57A0F+4456463]
+	GetHandleVerifier [0x00007FF6B0B005B6+953270]
+	(No symbol) [0x00007FF6B099E58F]
+	(No symbol) [0x00007FF6B0999264]
+	(No symbol) [0x00007FF6B099939B]
+	(No symbol) [0x00007FF6B0989BD4]
+	BaseThreadInitThunk [0x00007FFE0C7F7344+20]
+	RtlUserThreadStart [0x00007FFE0E6426B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Sebas\Desktop\Itla\Quinto cuatrimestre\Programacion III\tarea\tarea.py", line 60, in test_change_interface_language
+    self.assertTrue(self.driver.find_element(By.CSS_SELECTOR, ".lang1").is_displayed())
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".lang1"}
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0A27072+63090]
+	(No symbol) [0x00007FF6B0992CC2]
+	(No symbol) [0x00007FF6B082EC65]
+	(No symbol) [0x00007FF6B087499D]
+	(No symbol) [0x00007FF6B0874ADC]
+	(No symbol) [0x00007FF6B08B5B37]
+	(No symbol) [0x00007FF6B089701F]
+	(No symbol) [0x00007FF6B08B3412]
+	(No symbol) [0x00007FF6B0896D83]
+	(No symbol) [0x00007FF6B08683A8]
+	(No symbol) [0x00007FF6B0869441]
+	GetHandleVerifier [0x00007FF6B0E225CD+4238285]
+	GetHandleVerifier [0x00007FF6B0E5F72D+4488493]
+	GetHandleVerifier [0x00007FF6B0E57A0F+4456463]
+	GetHandleVerifier [0x00007FF6B0B005B6+953270]
+	(No symbol) [0x00007FF6B099E58F]
+	(No symbol) [0x00007FF6B0999264]
+	(No symbol) [0x00007FF6B099939B]
+	(No symbol) [0x00007FF6B0989BD4]
+	BaseThreadInitThunk [0x00007FFE0C7F7344+20]
+	RtlUserThreadStart [0x00007FFE0E6426B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_exist_image</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_search_term</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".mw-search-result-heading"}
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0A27072+63090]
+	(No symbol) [0x00007FF6B0992CC2]
+	(No symbol) [0x00007FF6B082EC65]
+	(No symbol) [0x00007FF6B087499D]
+	(No symbol) [0x00007FF6B0874ADC]
+	(No symbol) [0x00007FF6B08B5B37]
+	(No symbol) [0x00007FF6B089701F]
+	(No symbol) [0x00007FF6B08B3412]
+	(No symbol) [0x00007FF6B0896D83]
+	(No symbol) [0x00007FF6B08683A8]
+	(No symbol) [0x00007FF6B0869441]
+	GetHandleVerifier [0x00007FF6B0E225CD+4238285]
+	GetHandleVerifier [0x00007FF6B0E5F72D+4488493]
+	GetHandleVerifier [0x00007FF6B0E57A0F+4456463]
+	GetHandleVerifier [0x00007FF6B0B005B6+953270]
+	(No symbol) [0x00007FF6B099E58F]
+	(No symbol) [0x00007FF6B0999264]
+	(No symbol) [0x00007FF6B099939B]
+	(No symbol) [0x00007FF6B0989BD4]
+	BaseThreadInitThunk [0x00007FFE0C7F7344+20]
+	RtlUserThreadStart [0x00007FFE0E6426B1+33]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Sebas\Desktop\Itla\Quinto cuatrimestre\Programacion III\tarea\tarea.py", line 41, in test_search_term
+    self.assertTrue(self.driver.find_element(By.CLASS_NAME,"mw-search-result-heading").is_displayed())
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 741, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".mw-search-result-heading"}
+  (Session info: chrome=123.0.6312.122); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B0A27072+63090]
+	(No symbol) [0x00007FF6B0992CC2]
+	(No symbol) [0x00007FF6B082EC65]
+	(No symbol) [0x00007FF6B087499D]
+	(No symbol) [0x00007FF6B0874ADC]
+	(No symbol) [0x00007FF6B08B5B37]
+	(No symbol) [0x00007FF6B089701F]
+	(No symbol) [0x00007FF6B08B3412]
+	(No symbol) [0x00007FF6B0896D83]
+	(No symbol) [0x00007FF6B08683A8]
+	(No symbol) [0x00007FF6B0869441]
+	GetHandleVerifier [0x00007FF6B0E225CD+4238285]
+	GetHandleVerifier [0x00007FF6B0E5F72D+4488493]
+	GetHandleVerifier [0x00007FF6B0E57A0F+4456463]
+	GetHandleVerifier [0x00007FF6B0B005B6+953270]
+	(No symbol) [0x00007FF6B099E58F]
+	(No symbol) [0x00007FF6B0999264]
+	(No symbol) [0x00007FF6B099939B]
+	(No symbol) [0x00007FF6B0989BD4]
+	BaseThreadInitThunk [0x00007FFE0C7F7344+20]
+	RtlUserThreadStart [0x00007FFE0E6426B1+33]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 5, Pass: 2, Error: 3 -- Duration: 42.98 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
